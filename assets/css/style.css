@@ -1,0 +1,22 @@
+body{
+  font-family: sans-serif;
+}
+h1{
+  padding-top: 100px;
+}
+.tasksAdded {
+  padding: 10px;
+}
+.complete {
+  text-decoration: line-through rgba(55, 53, 47, 0.25); 
+  opacity: 1; 
+  color: rgba(55, 53, 47, 0.65);
+}
+.form-check-input:checked{
+  background: rgb(97, 96, 96);
+  border-color:  rgb(97, 96, 96);
+}
+.form-check-input:focus, .form-control:focus{
+  border-color:  rgb(97, 96, 96);
+  box-shadow: 0 0 0 .20rem rgb(180, 180, 180);
+}
