@@ -39,3 +39,11 @@ function theCheckboxIsTrue(elementLabel) {
 function theCheckboxIsFalse(elementLabel) {
   elementLabel.classList.remove("complete")
 }
+
+function addTask() {
+  var texto = document.getElementById("newTask").value
+  tamanho = listTask.length
+
+  listTask.push({id: tamanho + 1, name: texto})
+  addTaskIntoDom(listTask[tamanho])
+}
