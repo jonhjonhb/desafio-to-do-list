@@ -38,6 +38,10 @@ function theCheckboxIsFalse(elementLabel) {
 
 function addTask() {
   var texto = document.getElementById("newTask").value
+  if(texto === ""){
+    alert("Favor digitar a sua tarefa!")
+    return
+  }
   document.getElementById("newTask").value = ""
   tamanho = listTask.length
   listTask.push({id: tamanho + 1, name: texto})
