@@ -1,10 +1,6 @@
 const tasksAddedDiv = document.querySelector('#tasksAdded')
 
 const listTask = [
-  {id: 1, name: 'Revisar'},
-  {id: 2, name: 'Teste'},
-  {id: 3, name: 'Analisar'},
-  {id: 4, name: 'Implementar'}
 ]
 
 const addTaskIntoDom = tasksAdded => {
@@ -42,8 +38,8 @@ function theCheckboxIsFalse(elementLabel) {
 
 function addTask() {
   var texto = document.getElementById("newTask").value
+  document.getElementById("newTask").value = ""
   tamanho = listTask.length
-
   listTask.push({id: tamanho + 1, name: texto})
   addTaskIntoDom(listTask[tamanho])
 }
