@@ -1,7 +1,6 @@
 const tasksAddedDiv = document.querySelector('#tasksAdded')
 
-const listTask = [
-]
+const listTask = []
 
 const addTaskIntoDom = tasksAdded => {
   const div = document.createElement('div')
