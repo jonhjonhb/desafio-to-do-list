@@ -7,7 +7,7 @@ const addTaskIntoDom = tasksAdded => {
   div.classList.add("form-check")
   div.id = `check${tasksAdded.id}`
   div.innerHTML = `<input type="checkbox" class="form-check-input" placeholder="Task" onclick="changeMode('check${tasksAdded.id}')"><label class="form-check-label"> ${tasksAdded.name}</label>`
-  tasksAddedDiv.prepend(div)
+  tasksAddedDiv.append(div)
 }
 
 const init = () => {
